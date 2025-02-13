@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portefeuille</title>
+    <link rel="stylesheet" href="mise_en_page.css">
+    <script src="cookies.js" defer></script>
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle("dark-mode");
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>Bienvenue sur Mon Portfolio</h1>
+        <button onclick="toggleDarkMode()">Mode Sombre</button>
+        <nav>
+            <ul>
+     
+   
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="index2.html.html">CV</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="Contact">
+        <h2>Contact</h2>
+        <p>Vous pouvez me contacter via :</p>
+        <ul>
+            <li>📧 Email : <a href="marcele.monpole@gmail.com">marcele.monpole@gmail.com</a></li>
+            <li>📞 Téléphone : +33 6 05 69 95 32</li>
+        </ul>
+        <h3>Envoyez-moi un message :</h3>
+        <form action="marcele.monpole@gmail.com" method="post" enctype="text/plain">
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required><br>
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required><br>
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" rows="4" required></textarea><br>
+            <input type="submit" value="Envoyer">
+        </form>
+    </section>
+
+    <div id="cookie-banner">
+        <p>Ce site utilise des cookies pour améliorer l'expérience utilisateur.</p>
+        <div>
+            <button onclick="acceptCookies()">Accepter</button>
+            <button onclick="declineCookies()">Refuser</button>
+        </div>
+    </div>
+
+</body>
+</html>
